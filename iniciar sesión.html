@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es" data-bs-theme="auto">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Iniciar Sesión | CAC-Películas</title>
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <link href="Bootstrap/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        header {background-color: rgb(31, 31, 31);}
+        body {
+            background-image: url(img/fondoCine.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bg-body-secondary {
+            background-color: transparent !important;
+        }
+        .btn-instagram {
+            color: #e1306c;
+            border-color: #e1306c;
+        }
+        .btn-instagram:hover {
+            background-color: #c1255b;
+            border-color: #e1306c;
+        }
+        .custom-button {
+            background-color: #ff0000;
+            border-color: black;
+        }
+        .custom-button:hover {
+            background-color: #df001e;
+            border-color: black;
+        }
+        .btn a {
+            text-decoration: none;
+            color: black;
+            padding: 0.5rem 1rem;
+            font-size: 0.8rem;
+            width: 150px;
+        }
+    </style>
+    <link href="modals.css" rel="stylesheet">
+</head>
+<body>
+<header data-bs-theme="dark">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <strong>CAC Peliculas</strong>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-3 text-end">
+            <a href="index.html" type="button" class="btn btn-outline-primary me-2">Volver</a>
+        </div>
+    </div>
+</header>
+<div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+                <h1 class="fw-bold mb-0 fs-2">Iniciar sesión</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-5 pt-0">
+                <form id="registerForm">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control rounded-3" id="email" placeholder="name@example.com">
+                        <label for="email">Email</label>
+                        <div class="invalid-feedback">
+                            Por favor ingresa un correo electrónico válido.
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control rounded-3" id="clave" placeholder="Contraseña">
+                        <label for="clave">Contraseña</label>
+                        <div class="invalid-feedback">
+                            Por favor ingresa una contraseña.
+                        </div>
+                    </div>
+                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary custom-button" type="submit">Iniciar sesión</button>
+                    <hr class="my-4">
+                    <h2 class="fs-5 fw-bold mb-3">Registrarse</h2>
+                    <a class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" href="registro.html">
+                        <svg class="bi me-1" width="16" height="16"><use xlink:href="#x"/></svg>
+                        Nuevo usuario
+                    </a>
+                </form>
+                <div id="errorMessage" class="text-danger" style="display: none;"></div> <!-- Mensaje de error general -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="Bootstrap/assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts/iniciar sesión.js"></script>
+</body>
+</html>

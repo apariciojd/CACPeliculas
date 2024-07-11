@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es" data-bs-theme="auto">
+  <head><script src="./Bootstrap/assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>CAC Peliculas</title>
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+
+    
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+   
+
+    <link href="Bootstrap/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="canonical" href="Bootstrap/headers/headers.css">
+ 
+
+    
+</head>
+<body class="cuerpo">
+    
+
+    
+<header data-bs-theme="dark">
+  
+ <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <strong>CAC Peliculas</strong>
+      </a>
+      </div>
+   </div>
+     <div class="col-md-3 text-end">
+       <a href="registro.html" type="button" class="btn btn-outline-primary me-2">Registrarse</a>
+       <a href="iniciar sesión.html"   type="button" class="btn btn-primary">Iniciar Sesion</a>
+     </div>
+  </div>
+</header>
+
+<main>
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Tu Peli</h1>
+        <p class="lead text-body-secondary">Platafarma gratuita con una gran variedad de peliculas para que disfrutes desde la comodidad de tu hogar. Trabajo práctico para Codo a Codo JAVA.</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Estrenos recientes</a>
+          <a href="#moviesCarrusel" class="btn btn-secondary my-2">Las más populares</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="peliculasTendencias">
+    <div id="movies"></div>
+    <button class="boton anterior">Anterior</button>  
+    <button class="boton siguiente">Siguiente</button>
+  </section>
+  <section class="peliculasAclamadas">
+    <div class="div-center">
+      <Br>
+      <Br>
+      <h4>Para disfrutar en familia</h4>
+    </div>
+    <div id="moviesCarrusel"></div>
+  </section>
+  <div class="aclamadas" id="aclamadasContainer"></div>    
+</main>
+
+<footer class="text-body-secondary py-5">
+  <div class="">
+    <p class="flotante mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">Este es un proyecto de Codo a Codo</p>
+    <p class="mb-0"><a href="Quienessomos.html">Conocé a los integrantes del grupo</a>.</p>
+    <p>Derechos Reservados 2024</p>
+  </div>
+</footer>
+
+<script src="Bootstrap/assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="scripts/scriptAPI.js"></script>
+</body>
+</html>
